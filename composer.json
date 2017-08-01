@@ -6,8 +6,11 @@
     "description": "Test",
 
     "autoload": {
-        "psr-4": {
-            "yii\\imagine\\": ""
+        "psr-0": {
+            "bubogumy\\project\\": "./src"
         }
-    }
+    },
+    "require": {
+        "yiisoft/yii2-composer": "dev-master"
+      },
 }
