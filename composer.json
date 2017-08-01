@@ -1,0 +1,12 @@
+{
+    "name": "bubogumy/yii2-mailer",
+
+    "type": "yii2-extension",
+
+    "description": "Test",
+
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+
+}
