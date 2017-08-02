@@ -1,6 +1,6 @@
 <?php
 
-namespace bubogumy\project\commands;
+namespace bubogumy\project;
 use yii\console\Controller;
 
 class HelloController extends Controller
