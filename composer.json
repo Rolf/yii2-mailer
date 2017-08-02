@@ -12,8 +12,12 @@
     },
     "require": {
         "yiisoft/yii2-composer": "dev-master"
+
       },
  "extra": {
         "bubogumy": "bubogumy\\project\\HelloController"
     }
-}
+
+      }
+
+
