@@ -1,7 +1,7 @@
 <?php
 
-namespace bubogumy\project;
-use yii\console\Controller;
+namespace bubogumy\mailer;
+use yii\base\HelloController;
 
 class HelloController extends Controller
 {

@@ -15,7 +15,7 @@
 
       },
  "extra": {
-        "bubogumy": "bubogumy\\project\\HelloController"
+        "bubogumy": "bubogumy\\mailer\\HelloController"
     }
 
       }
