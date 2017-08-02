@@ -2,6 +2,7 @@
 
 namespace bubogumy\mailer;
 use yii\base\HelloController;
+use yii\base\Component; 
 
 class HelloController extends Controller
 {
