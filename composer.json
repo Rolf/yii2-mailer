@@ -6,18 +6,14 @@
     "description": "Test",
 
     "autoload": {
-        "psr-0": {
-            "bubogumy\\project\\": "./src"
+        "psr-4": {
+            "bubogumy\\yii2-mailer\\": ""
         }
     },
     "require": {
         "yiisoft/yii2-composer": "dev-master"
 
-      },
- "extra": {
-        "bubogumy": "bubogumy\\mailer\\HelloController"
-    }
-
       }
+}
 
 
