@@ -13,7 +13,7 @@ composer require bubogumy/yii2-mailer
 Подключаем Веб-приложение в файле ``config/web.php`` в ``components``  
 ````
 'm' => [
-            'class' => 'bubogumy\mailer',
+            'class' => 'bubogumy\Mailer',
         ]
 ````
 Для отправки сообщений используем  

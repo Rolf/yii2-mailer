@@ -4,7 +4,7 @@ namespace bubogumy;
 
 use yii\base\Component;
 
-class mailer extends Component
+class Mailer extends Component
 {
     /**
      * Отправка Email сообщений
@@ -15,10 +15,9 @@ class mailer extends Component
      * @return bool
      */
 
-    public static function send($email, $subject, $message, $attach = null)
+    public function send($email, $subject, $message, $attach = null)
     {
         \Yii::info(
-            'Отправка запроса в ПИПО на отправку email ' . PHP_EOL .
             'Адрес почты: ' . $email . PHP_EOL .
             'Заголовок сообщения: ' . $subject . PHP_EOL .
             'Текст сообщения: ' . $message . PHP_EOL,
