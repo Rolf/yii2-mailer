@@ -6,11 +6,16 @@ use yii\base\Component;
 
 class mailer extends Component
 {
-	public function input($name)
-	{
-		echo "<input class='form-control' name =".$name.">";
-	}
-    public static function send($email, $subject, $message, User $user = null, $attach = null)
+    /**
+     * Отправка Email сообщений
+     * @param $email string
+     * @param $subject string
+     * @param $message string
+     * @param $attach string путь до файла, который надо прикрепить
+     * @return bool
+     */
+
+    public static function send($email, $subject, $message, $attach = null)
     {
         \Yii::info(
             'Отправка запроса в ПИПО на отправку email ' . PHP_EOL .
@@ -40,11 +45,7 @@ class mailer extends Component
         }
 
         $result = $sending->send();
-    if ($result == true) {
-        echo "yes";
-    } else {
-        echo "no";
-    }
+
         \Yii::info(($result ?  'Успешно отправлен email' : 'Email не был отправлен'), __METHOD__);
 
         return $result;
