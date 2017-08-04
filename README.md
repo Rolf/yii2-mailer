@@ -37,3 +37,5 @@ $attach = путь до файла, который отправляем.
 **Решение**  
 
 Добавляем в composer.json алиас ``"minimum-stability": "dev"``
+
+Проект на [packagist.org](https://packagist.org/packages/bubogumy/yii2-mailer)
