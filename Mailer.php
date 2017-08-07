@@ -14,7 +14,6 @@ class Mailer extends Component
      * @param $attach string путь до файла, который надо прикрепить
      * @return bool
      */
-
     public function send($email, $subject, $message, $attach = null)
     {
         \Yii::info(
@@ -33,7 +32,7 @@ class Mailer extends Component
         );
 
 
-        //Замена отправка сообщений с Пипо на страндартный Yii mailer
+        // Замена отправка сообщений с Пипо на страндартный Yii mailer
         $sending = \Yii::$app->mailer->compose()
             ->setTo($email)
             ->setSubject($subject)
@@ -45,9 +44,8 @@ class Mailer extends Component
 
         $result = $sending->send();
 
-        \Yii::info(($result ?  'Успешно отправлен email' : 'Email не был отправлен'), __METHOD__);
+        \Yii::info(($result ? 'Успешно отправлен email' : 'Email не был отправлен'), __METHOD__);
 
         return $result;
     }
 }
-

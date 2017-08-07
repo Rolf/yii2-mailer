@@ -1,18 +1,14 @@
 {
-    "name": "bubogumy/yii2-mailer",
-
-    "type": "yii2-extension",
-
-    "description": "Test",
-
-    "autoload": {
-        "psr-4": {
-            "bubogumy\\": ""
-        }
-    },
-    "require": {
-        "yiisoft/yii2-composer": "*"
-      }
+  "name": "bubogumy/yii2-mailer",
+  "type": "yii2-extension",
+  "description": "Test",
+  "autoload": {
+    "psr-4": {
+      "bubogumy\\": ""
+    }
+  },
+  "require": {
+    "yiisoft/yii2": "*",
+    "yiisoft/yii2-composer": "*"
+  }
 }
-
-
