@@ -3,11 +3,7 @@ class SmsTest extends \Codeception\Test\Unit
 {
     public function testSend()
     {
-        $sms = Yii::createObject(\bubogumy\Sms::class, [
-            'login' => 'login_test',
-            'password' => 'password_test',
-            'srcSMS' => 'src_test',
-        ]);
-        $sms->send('+777777777', 'message');
+        $email = Yii::createObject(\bubogumy\mailer::class);
+        $email->send($email = 'mail@mail.ru', $subject="Subject" ,$message = 'message');
     }
 }
